@@ -30,16 +30,16 @@ There are three parts to the reflection:
 ### 1. Pipeline of Project
 * 1. Describe the pipeline
 * Step 0 - Get Image and the size of image
-![orginal image](P1_original_challenge.png)
+<img src="P1_original_challenge.png" alt="original" width="480"/>
 * Step 1 - Convert a image to Grayscale of the image
-![grayscale](P1_gray_challenge.png)
+<img src="P1_gray_challenge.png" alt="gray-scale" width="480"/>
 * Step 2 - Apply Gaussian smoothing / blurring to the grayscaled image
 * Step 3 - Apply Canny edge detector to find all edges
 Canny detector would not detect lines well since it lost valuable color information(yellow/white) when converting the image in grayscale. Another challenge is that the color of the asphalt became lighter at certain points. Moreover, the Canny operator finds more edges than necessary such as horizontal landmark line and vertical tree lines etc.
-![grayscale](P1_canny_challenge.png)
+<img src="P1_canny_challenge.png" alt="canny-edge" width="480"/>
 * Step 4 - Define the region of interest and apply region masking surroundings + color mask
 To overcome canny detector problems above, I introduced the color maskWith the color mask I was able to detect the lines
-![grayscale](P1_color_challenge.png)
+<img src="P1_color_challenge.png" alt="color" width="480"/>
 * Step 5 - Apply Hough transformation to find the lines in the region of interest
 * Step 6 - Draw the lines on the edge of the image using draw_lines() function. More than one lines are generated from the previous step for left/right lane. Use the slope to detect if a specific line belongs to the left/right lane. Then fit a liear polynomial among all the points and use that line as the left/right lane. It helps to reduce the number of lines in the image.
 
