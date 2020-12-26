@@ -17,10 +17,8 @@ Files contained in this repository:
 ---
 
 **Lane Line Detection Testing Image Example**
-Original Image:
-![](./test_images/solidWhiteCurve.jpg)
-Output Image with Lanes:
-![](./test_images/solidWhiteCurveProcessed.png)
+[Original Image](./test_images/solidWhiteCurve.jpg)
+[Output Image with Lanes](./test_images/solidWhiteCurveProcessed.png)
 
 ---
 ### Project Summary
